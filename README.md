@@ -39,7 +39,7 @@ As for the rest, the interface should be pretty straightforward. If you have a q
    * Ubuntu 22.04: `sudo apt install cmake libcurl4-gnutls-dev libpcap0.8-dev libsdl2-dev qtbase5-dev libslirp-dev libarchive-dev libepoxy-dev`
    * Older Ubuntu: `sudo apt install cmake libcurl4-gnutls-dev libpcap0.8-dev libsdl2-dev qt5-default libslirp-dev libarchive-dev libepoxy-dev`
    * Arch Linux: `sudo pacman -S base-devel cmake git libpcap sdl2 qt5-base libslirp libarchive libepoxy`
-3. Download the melonDS repository and prepare:
+2. Download the melonDS repository and prepare:
    ```bash
    git clone https://github.com/Arisotura/melonDS
    cd melonDS
@@ -50,6 +50,12 @@ As for the rest, the interface should be pretty straightforward. If you have a q
    cmake -B build
    cmake --build build -j$(nproc --all)
    ```
+   
+4. Install to local disk:
+   ```bash
+   sudo cmake --install build/
+   ```
+   
 
 ### Windows
 1. Install [MSYS2](https://www.msys2.org/)
